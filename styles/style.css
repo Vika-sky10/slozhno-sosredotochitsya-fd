@@ -1,5 +1,235 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  display: grid;
+  min-width: 375px;
+  justify-self:center;
+  align-self: center;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  background-color: var(--page-bg-color);
+  padding: 10px;
 }
+
+h1, h2, h3, h4, p, span {
+  font-family: var(--font-family);
+  inline-size: 375px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-text-color);
+  border-left: 1px solid var(--accent-text-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-text-color);
+  border-right: 1px solid var(--accent-text-color);
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding-block-end: 66px;
+  min-block-size: 668px;
+  block-size: 100vh;
+  background-image: url("../images/cover-image-dark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.empty {
+  position: relative; 
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  font-size: var(--text-main-size);
+  color: var(--accent-text-color);
+
+}
+
+.empty::before {
+  content: 'REC';
+  order: 1;
+}
+
+.empty::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--accent-text-color);
+  filter: blur(0.5px);
+  border-inline-end: 1px solid var(--accent-bk-color) ;
+  border-block-start: 1px solid var(--accent-bk-color);
+  order: 2; 
+}
+
+.header__theme-menu {
+  display: grid;
+  width: 375px;
+  justify-content: end;
+  color: var(--accent-text-color);
+}
+
+.header__theme-menu-list {
+  display: grid;
+ gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+
+}
+
+.header__title, .focus {
+  display: grid;
+  width: 355px;
+  height: 192px;
+  font-weight: 700;
+  font-size: var(--text-title-size);
+  line-height: 83%;
+  color: var(--shadow-color);
+  align-items: center;
+  justify-items: center;
+  text-shadow: 4px 4px 0 var(--accent-text-color);
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+  background-color: #000028;
+}
+
+.why {
+  padding-top: 40px;
+}
+
+.main__title {
+  display: grid;
+  font-weight: 700;
+  font-size: var(--text-main-size);
+  line-height: 23.4px;
+  color: var(--accent-text-color);
+  word-wrap: break-word;
+  margin-block-end: 20px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+.main__text {
+  display: grid;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: var(--text-main-size);
+  line-height: 23.4px;
+  display: grid;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  margin-block-end: 20px;
+}
+
+a {
+  display: inline;
+  width: min-content;
+  text-shadow: 2px 1px 0 var(--accent-text-color);
+  text-decoration: none;
+}
+
+
+.section__title {
+  display: grid;
+  background-color: var(--accent-bk-color);
+  color: #000028;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+.advice {
+  display: grid;
+  font-weight: 400;
+  font-size: var(--text-main-size);
+  line-height: 23.4px;
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 375px;
+  padding-block-end: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  
+}
+
+.footer {
+  background-color: #000028;
+  padding: 276px 4px;
+    text-align: center;
+    line-height: 83%;
+}
+
+.footer__decorated-zone {
+  position: relative;
+}
+
+.footer__decorated-zone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--accent-text-color);
+  border-block-start: 1px solid var(--accent-text-color);
+}
+
+.footer__decorated-zone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-text-color);
+  border-left: 1px solid var(--accent-text-color);
+}
+
+/*@media (min-width: 768px) {
+  .page, h1, h2, h3, p {
+    inline-size: 768px;
+
+  }
+}*/
