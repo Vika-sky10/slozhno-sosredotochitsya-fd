@@ -95,6 +95,7 @@ h1, h2, h3, h4, p, span {
 .header__theme-menu-list {
   display: grid;
   gap: 10px;
+  text-transform: lowercase
 }
 
 .header__theme-menu-button {
@@ -133,7 +134,6 @@ h1, h2, h3, h4, p, span {
 }
 
 .main__title {
-  display: grid;
   font-weight: 700;
   font-size: var(--text-main-size);
   line-height: 23.4px;
@@ -144,7 +144,6 @@ h1, h2, h3, h4, p, span {
 }
 
 .main__text {
-  display: grid;
   color: var(--text-color);
   font-weight: 400;
   font-size: var(--text-main-size);
@@ -154,8 +153,6 @@ h1, h2, h3, h4, p, span {
 }
 
 .link {
-  display: inline;
-  width: min-content;
   text-shadow: 2px 1px 0 var(--accent-text-color);
   text-decoration: none;
 }
