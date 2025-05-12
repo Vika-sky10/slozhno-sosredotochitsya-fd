@@ -150,6 +150,7 @@ h1, h2, h3, h4, p, span {
   line-height: 23.4px;
   padding-inline-end: 10px;
   margin-block-end: 20px;
+  font-size: var(--text-main-size);
 }
 
 .link {
@@ -171,6 +172,7 @@ h1, h2, h3, h4, p, span {
   color: #000028;
   margin-block-start: 10px;
   margin-block-end: 10px;
+  font-size: var(--text-main-size);
 
 }
 
