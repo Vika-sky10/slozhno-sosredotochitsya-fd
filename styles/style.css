@@ -3,6 +3,7 @@
 .page {
   display: grid;
   min-width: 375px;
+  width: 99%;
   justify-self:center;
   align-self: center;
   overflow-x: hidden;
@@ -89,7 +90,7 @@ h1, h2, h3, h4, p, span {
   display: grid;
   justify-content: end;
   color: var(--accent-text-color);
-  top: 60px;
+  top: 75px;
   right: 10px;
   position: absolute;
 }
@@ -97,12 +98,18 @@ h1, h2, h3, h4, p, span {
 .header__theme-menu-list {
   display: grid;
   gap: 10px;
-  text-transform: lowercase
+  text-transform: lowercase;
+  font-size: var(--text-main-size);
 }
 
 .header__theme-menu-button {
+  display: flex;
   background-color: transparent;
   border: none;
+  height: 23px;
+  padding-inline-start: 13px;
+  padding-inline-end: 13px;
+  line-height: 1;
 }
 
 .header__theme-menu-button:hover {
@@ -140,7 +147,7 @@ h1, h2, h3, h4, p, span {
   display: grid;
   gap: 50px;
   background-color: #000028;
-  padding: 40px 20px;
+  padding: 40px 10px;
 }
 
 .main__title {
@@ -156,7 +163,7 @@ h1, h2, h3, h4, p, span {
 .main__text {
   color: var(--text-color);
   font-weight: 400;
-  font-size: var(--text-main-size);
+  font-size: 17px;
   line-height: 23.4px;
   margin-block-end: 20px;
 }
@@ -216,6 +223,7 @@ h1, h2, h3, h4, p, span {
   padding: 276px 4px;
   text-align: center;
   line-height: 83%;
+  height: max(100vh, 668px);
 }
 
 .footer__decorated-zone {
