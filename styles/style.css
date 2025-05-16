@@ -97,7 +97,7 @@ h1, h2, h3, h4, p, span {
 
 .header__theme-menu-list {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   text-transform: lowercase;
   font-size: var(--text-main-size);
 }
@@ -165,7 +165,6 @@ h1, h2, h3, h4, p, span {
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-  margin-block-end: 20px;
 }
 
 .link {
