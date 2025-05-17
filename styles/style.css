@@ -124,6 +124,11 @@ h1, h2, h3, h4, p, span {
   border: 1px solid var(--accent-bk-color);
 }
 
+.header__title {
+  margin-block-start: 40px;
+  margin-inline-start: 10px;
+}
+
 .header__title, .focus {
   display: grid;
   height: 192px;
@@ -158,6 +163,11 @@ h1, h2, h3, h4, p, span {
   word-wrap: break-word;
   margin-block-end: 20px;
   padding-inline-end: 10px;
+}
+
+.first-section {
+  display: grid;
+  gap: 20px;
 }
 
 .main__text {
