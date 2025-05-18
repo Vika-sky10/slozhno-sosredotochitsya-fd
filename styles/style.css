@@ -3,7 +3,7 @@
 .page {
   display: grid;
   min-width: 375px;
-  width: 99%;
+  width: 100%;
   justify-self:center;
   align-self: center;
   overflow-x: hidden;
@@ -112,6 +112,10 @@ h1, h2, h3, h4, p, span {
   line-height: 1;
 }
 
+.header__theme-menu-button_active {
+  border: 1px solid #ff0070;
+}
+
 .header__theme-menu-button:hover {
   border: 1px solid var(--accent-bk-color);
 }
@@ -141,7 +145,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .header_description {
-  margin-block-start: 55px;
+  margin-block-start: 85px;
   inline-size: 355px;
   block-size: 117px;
   align-self: center;
@@ -161,7 +165,6 @@ h1, h2, h3, h4, p, span {
   line-height: 23.4px;
   color: var(--accent-text-color);
   word-wrap: break-word;
-  padding-inline-end: 10px;
 }
 
 
@@ -209,6 +212,10 @@ h1, h2, h3, h4, p, span {
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.gallery .section__title {
+  margin-block-start: 0;
 }
 
 .gallery_content {
@@ -279,7 +286,8 @@ h1, h2, h3, h4, p, span {
   }
 
   .header__theme-menu {
-    top: 192px
+    top: 192px;
+    right: 20px;
   }
 
   .focus {
@@ -325,6 +333,8 @@ h1, h2, h3, h4, p, span {
   
   .how__list {
     margin-block-start: 20px;
+    display: grid;
+    gap: 10px;
   }
   
   .how {
@@ -370,6 +380,10 @@ h1, h2, h3, h4, p, span {
     left: 20px;
   }
 
+  .footer .focus {
+    padding-top: 196px;
+  }
+
   .footer__decorated-zone::after {
     top: 20px;
     right: 20px;
@@ -382,14 +396,19 @@ h1, h2, h3, h4, p, span {
     position: absolute;
     top: 20px;
     left: 397px;
-    display: block;  
+    display: block;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-
   }
+
+  .header__title {
+    padding-block-end: 20px;
+  }
+
+
   .header_description {
     width: 491px;
     height: 71px;
@@ -416,5 +435,9 @@ h1, h2, h3, h4, p, span {
   .how {
    display: grid;
    grid-template-columns: 315px 1fr;
+  }
+
+  .footer .focus {
+    padding-top: 0;
   }
 }
