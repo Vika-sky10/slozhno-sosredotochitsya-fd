@@ -120,7 +120,7 @@ h1, h2, h3, h4, p, span {
   border: 1px solid var(--accent-bk-color);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button::focus-visible {
   border-bottom: 1px solid var(--accent-bk-color);
 }
 
@@ -129,7 +129,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .header__title {
-  margin-block-start: 85px;
+  padding-block-start: 50px;
   margin-inline-start: 10px;
 }
 
@@ -137,7 +137,7 @@ h1, h2, h3, h4, p, span {
   display: grid;
   height: 192px;
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--shadow-color);
   align-items: center;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .header_description {
-  margin-block-start: 85px;
+  margin-block-start: 95px;
   inline-size: 355px;
   block-size: 117px;
   align-self: center;
@@ -196,8 +196,13 @@ h1, h2, h3, h4, p, span {
   display: grid;
   background-color: var(--accent-bk-color);
   color: #000028;
-  margin-block-end: 10px;
+  
   font-size: var(--text-main-size);
+
+}
+
+.section__title {
+  margin-block-end: 10px;
 
 }
 
@@ -303,6 +308,10 @@ h1, h2, h3, h4, p, span {
     font-size: var(--text-main-size);
   }
 
+  .header__title {
+    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .main {
     padding: 60px 20px;
     gap: 80px;
@@ -334,7 +343,7 @@ h1, h2, h3, h4, p, span {
   .how__list {
     margin-block-start: 20px;
     display: grid;
-    gap: 10px;
+    gap: 20px;
   }
   
   .how {
