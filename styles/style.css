@@ -9,7 +9,11 @@
   overflow-x: hidden;
   font-family: var(--font-family);
   background-color: var(--page-bg-color);
+  background: var(--background-img);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, p, span {
@@ -46,11 +50,6 @@ h1, h2, h3, h4, p, span {
   grid-template-rows: 1fr min-content 1fr;
   padding-block-end: 66px;
   height: max(100vh, 668px);
-  background-image: url("../images/cover-image-dark.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   width: 100%;
 }
 
@@ -155,7 +154,6 @@ h1, h2, h3, h4, p, span {
 .main {
   display: grid;
   gap: 50px;
-  background-color: #000028;
   padding: 40px 10px;
 }
 
@@ -190,19 +188,14 @@ h1, h2, h3, h4, p, span {
 
 .section__title {
   margin-block-start: 20px;
+  margin-block-end: 10px;
 }
 
 .section__title, .header_description {
   display: grid;
   background-color: var(--accent-bk-color);
   color: #000028;
-  
   font-size: var(--text-main-size);
-
-}
-
-.section__title {
-  margin-block-end: 10px;
 
 }
 
@@ -235,7 +228,6 @@ h1, h2, h3, h4, p, span {
 
 .footer {
   width: 100%;
-  background-color: #000028;
   padding: 276px 0;
   text-align: center;
   line-height: 83%;
@@ -295,6 +287,10 @@ h1, h2, h3, h4, p, span {
     right: 20px;
   }
 
+  .header__title {
+    padding-block-start: 40px;
+  }
+
   .focus {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-left: 0;
@@ -306,10 +302,6 @@ h1, h2, h3, h4, p, span {
     margin-right: 20px;
     margin-bottom: 163px;
     font-size: var(--text-main-size);
-  }
-
-  .header__title {
-    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .main {
@@ -349,7 +341,7 @@ h1, h2, h3, h4, p, span {
   .how {
     display: grid;
     grid-template-columns: 236px 1fr;
-    gap: 10px;
+    gap: 20px;
   }
 
   .gallery_content {
@@ -415,6 +407,7 @@ h1, h2, h3, h4, p, span {
 
   .header__title {
     padding-block-end: 20px;
+    padding-block-start: 30px;
   }
 
 
