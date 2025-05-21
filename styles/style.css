@@ -215,7 +215,6 @@ h1, h2, h3, h4, p, span {
 
 .gallery .section__title {
   margin-block-start: 0;
-  margin-block-end: 20px;
 }
 
 .gallery_content {
@@ -352,6 +351,10 @@ h1, h2, h3, h4, p, span {
     gap: 20px;
   }
 
+  .gallery .section__title {
+    margin-block-end: 20px;
+  }
+
   .gallery_content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -389,7 +392,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .footer .focus {
-    padding-top: 196px;
+    padding-top: 183px;
   }
 
   .footer__decorated-zone::after {
@@ -447,6 +450,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .footer .focus {
-    padding-top: 5px;
+    padding-top: 0;
+    padding-block-end: 0;
   }
 }
