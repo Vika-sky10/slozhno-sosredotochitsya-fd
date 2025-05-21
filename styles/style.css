@@ -105,9 +105,10 @@ h1, h2, h3, h4, p, span {
   display: flex;
   background-color: transparent;
   border: none;
-  height: 23px;
+  height: 25px;
   padding-inline-start: 13px;
   padding-inline-end: 13px;
+  padding-block: 2px;
   line-height: 1;
 }
 
@@ -288,7 +289,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .header__title {
-    padding-block-start: 40px;
+    padding-block-start: 30px;
   }
 
   .focus {
@@ -407,7 +408,7 @@ h1, h2, h3, h4, p, span {
 
   .header__title {
     padding-block-end: 20px;
-    padding-block-start: 30px;
+    padding-block-start: 35px;
   }
 
 
