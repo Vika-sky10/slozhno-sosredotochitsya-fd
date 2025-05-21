@@ -112,14 +112,14 @@ h1, h2, h3, h4, p, span {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid #ff0070;
+  border: 1px solid var(--accent-bk-color);
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--accent-bk-color);
 }
 
-.header__theme-menu-button::focus-visible {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-bk-color);
 }
 
@@ -128,7 +128,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .header__title {
-  padding-block-start: 50px;
+  padding-block-start: 40px;
   margin-inline-start: 10px;
 }
 
@@ -348,7 +348,7 @@ h1, h2, h3, h4, p, span {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 100%;
     
   }
