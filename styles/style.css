@@ -392,7 +392,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .footer .focus {
-    padding-top: 186px;
+    padding-top: 190px;
   }
 
   .footer__decorated-zone::after {
@@ -450,7 +450,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .footer .focus {
-    padding-top: 5px;
+    padding-top: 10px;
     padding-block-end: 0;
   }
 }
