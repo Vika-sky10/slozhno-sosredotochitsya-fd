@@ -1,19 +1,13 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   .page {
-    --font-family: 'IBM Plex Mono';
+    --border-color: #353430;
     --text-color: #353430;
+    --main-title: #353430;
     --accent-text-color: #FF8DCB;
     --accent-bk-color: #FF8DCB;
     --shadow-color: #FFC2E6;
-    --text-title-size: 116px;
-    --text-main-size: 18px;
     --background-img: url(../images/cover-image-light.png);
+    --page-bg-color: #fff1f7;
   }
 }
 
@@ -25,69 +19,17 @@
   display: none;
 }
 
-.theme-light .main__title {
-  color: var(--text-color);
-}
-
-.theme-light .decorated-zone::before {
-  border-bottom: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
-}
-
-.theme-light .decorated-zone::after {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--text-color);
-}
-
-.theme-light .footer__decorated-zone::after {
-  border-inline-end: 1px solid var(--text-color);
-  border-block-start: 1px solid var(--text-color);
-}
-
-.theme-light .footer__decorated-zone::before {
-  border-bottom: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
-}
-
-.theme-light .page {
-  --font-family: 'IBM Plex Mono';
-  --text-color: #353430;
-  --accent-text-color: #FF8DCB;
-  --accent-bk-color: #FF8DCB;
-  --shadow-color: #FFC2E6;
-  --text-title-size: 116px;
-  --text-main-size: 18px;
-  --background-img: url(../images/cover-image-light.png);
-  
-}
 
 @media (prefers-color-scheme: light) {
-  .root {
-    .page {
-      --font-family: 'IBM Plex Mono';
-      --text-color: #353430;
-      --accent-text-color: #FF8DCB;
-      --accent-bk-color: #FF8DCB;
-      --shadow-color: #FFC2E6;
-      --text-title-size: 116px;
-      --text-main-size: 18px;
-      --background-img: url(../images/cover-image-light.png);
+  .page {
+    --border-color: #353430;
+    --text-color: #353430;
+    --main-title: #353430;
+    --accent-text-color: #FF8DCB;
+    --accent-bk-color: #FF8DCB;
+    --shadow-color: #FFC2E6;
+    --background-img: url(../images/cover-image-light.png);
+    --page-bg-color: #fff1f7;
+
     }
-  }
 }

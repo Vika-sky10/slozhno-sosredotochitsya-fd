@@ -1,15 +1,11 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   display: grid;
-  min-width: 375px;
   width: 100%;
   justify-self:center;
   align-self: center;
-  overflow-x: hidden;
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   background-color: var(--page-bg-color);
-  background: var(--background-img);
+  background-image: var(--background-img);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,7 +13,7 @@
 }
 
 h1, h2, h3, h4, p, span {
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
 }
 
 .decorated-zone::before {
@@ -28,8 +24,8 @@ h1, h2, h3, h4, p, span {
   left: 10px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-text-color);
-  border-left: 1px solid var(--accent-text-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .decorated-zone::after {
@@ -40,8 +36,8 @@ h1, h2, h3, h4, p, span {
   right: 10px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-text-color);
-  border-right: 1px solid var(--accent-text-color);
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .header {
@@ -78,8 +74,7 @@ h1, h2, h3, h4, p, span {
   height: 10px;
   background-color: var(--accent-text-color);
   border-radius: 50%;
-  box-shadow: 0 0 0 2px var(--accent-text-color);
-  filter: blur(0.5px);
+  box-shadow: 0 0 4px 2px var(--accent-text-color);
   border-inline-end: 1px solid var(--accent-bk-color) ;
   border-block-start: 1px solid var(--accent-bk-color);
   order: 2;
@@ -88,10 +83,12 @@ h1, h2, h3, h4, p, span {
 .header__theme-menu {
   display: grid;
   justify-content: end;
-  color: var(--accent-text-color);
+  color: var(--border-color);
   top: 75px;
   right: 10px;
-  position: absolute;
+  /*position: absolute;*/
+  padding-right: 10px;
+  padding-top: 75px;
 }
 
 .header__theme-menu-list {
@@ -110,22 +107,24 @@ h1, h2, h3, h4, p, span {
   padding-inline-end: 13px;
   padding-block: 2px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-bk-color);
+  border: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-bk-color);
+  border: 1px solid var(--border-color);
+  opacity: 0.5;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-bk-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:active {
-  border: 1px solid var(--accent-bk-color);
+  border: 1px solid var(--border-color);
 }
 
 .header__title {
@@ -136,7 +135,6 @@ h1, h2, h3, h4, p, span {
 
 .header__title, .focus {
   display: grid;
-  height: 192px;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
@@ -147,7 +145,6 @@ h1, h2, h3, h4, p, span {
 .header_description {
   margin-block-start: 95px;
   inline-size: 355px;
-  block-size: 117px;
   align-self: center;
   justify-self: center;
 }
@@ -162,8 +159,7 @@ h1, h2, h3, h4, p, span {
   font-weight: 700;
   font-size: var(--text-main-size);
   line-height: 23.4px;
-  color: var(--accent-text-color);
-  word-wrap: break-word;
+  color: var(--main-title);
 }
 
 
@@ -180,10 +176,14 @@ h1, h2, h3, h4, p, span {
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
   outline: 1px solid var(--text-color);
 }
 
@@ -201,11 +201,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .advice {
-  display: grid;
   font-weight: 400;
-  font-size: var(--text-main-size);
-  line-height: 23.4px;
-  
 }
 
 .gallery {
@@ -228,44 +224,17 @@ h1, h2, h3, h4, p, span {
 }
 
 .footer {
-  width: 100%;
-  padding: 276px 0;
+  display: grid;
+  place-items: center; 
+  height: max(100vh, 668px);
   text-align: center;
   line-height: 83%;
-  height: max(100vh, 668px);
-}
-
-.footer__decorated-zone {
   position: relative;
-}
-
-.footer__decorated-zone::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 10px;
-  right: 10px;
-  width: 25px;
-  height: 25px;
-  border-inline-end: 1px solid var(--accent-text-color);
-  border-block-start: 1px solid var(--accent-text-color);
-}
-
-.footer__decorated-zone::before {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: 10px;
-  left: 10px;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--accent-text-color);
-  border-left: 1px solid var(--accent-text-color);
 }
 
 .footer_focus {
   padding-block-end: 80px;
-  text-shadow: 2px 2px 0 var(--accent-text-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 
 }
 
@@ -290,8 +259,8 @@ h1, h2, h3, h4, p, span {
   }
 
   .header__theme-menu {
-    top: 192px;
-    right: 20px;
+    padding-top: 192px;
+    padding-right: 20px;
   }
 
   .header__title {
@@ -331,7 +300,8 @@ h1, h2, h3, h4, p, span {
   }
 
   .what .main__title {
-    width: 236px;
+    max-width: 236px;
+    width:100%
   }
 
   .why__list {
@@ -367,18 +337,18 @@ h1, h2, h3, h4, p, span {
     grid-column: 1/3;
   }
 
+  .ice-cream, .music {
+    height: 100%;
+    object-fit: cover;
+  }
   .ice-cream {
     grid-column: 3;
     grid-row: 1/3;
-    height: 100%;
-    object-fit: cover;
   }
 
   .music {
     grid-column: 1;
     grid-row: 2/4;
-    height: 100%;
-    object-fit: cover;
   }
 
   .street {
@@ -386,27 +356,17 @@ h1, h2, h3, h4, p, span {
     grid-row: 3;
   }
 
-  .footer__decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-  }
-
-  .footer .focus {
-    padding-top: 190px;
-  }
-
-  .footer__decorated-zone::after {
-    top: 20px;
-    right: 20px;
-  }
 }
 
 @media (min-width: 1024px) {
+  .header {
+    grid-template-rows: 20px 1fr min-content;
+  }
+  
   .header__theme-menu {
     margin: 0;
-    position: absolute;
-    top: 20px;
-    left: 397px;
+    padding-top: 0;
+    padding-left: 397px;
     display: block;
   }
 
@@ -423,7 +383,6 @@ h1, h2, h3, h4, p, span {
 
   .header_description {
     width: 491px;
-    height: 71px;
     margin-block-end: 134px;
   }
 
@@ -438,6 +397,7 @@ h1, h2, h3, h4, p, span {
     display: grid;
     grid-template-columns: repeat(3, 315px);
     gap: 20px;
+    margin: 0 auto;
   }
 
   .what .main__title {
@@ -448,9 +408,9 @@ h1, h2, h3, h4, p, span {
    display: grid;
    grid-template-columns: 315px 1fr;
   }
-
+/*
   .footer .focus {
     padding-top: 10px;
     padding-block-end: 0;
-  }
+  }*/
 }
