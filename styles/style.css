@@ -268,7 +268,7 @@ h1, h2, h3, h4, p, span {
     row-gap: 13px;
 }
   .header__title {
-    padding-block-start: 170px;
+    padding-block-start: 160px;
   }
 
   .focus {
@@ -282,7 +282,7 @@ h1, h2, h3, h4, p, span {
     margin-right: 20px;
     margin-bottom: 163px;
     font-size: var(--text-main-size);
-    margin-block-start: 150px;
+    margin-block-start: 135px;
   }
 
   .main {
