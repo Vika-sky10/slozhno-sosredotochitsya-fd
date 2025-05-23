@@ -86,7 +86,6 @@ h1, h2, h3, h4, p, span {
   color: var(--border-color);
   top: 75px;
   right: 10px;
-  /*position: absolute;*/
   padding-right: 10px;
   padding-top: 75px;
 }
@@ -225,7 +224,7 @@ h1, h2, h3, h4, p, span {
 
 .footer {
   display: grid;
-  place-items: center; 
+  place-items: center;
   height: max(100vh, 668px);
   text-align: center;
   line-height: 83%;
@@ -362,7 +361,7 @@ h1, h2, h3, h4, p, span {
   .header {
     grid-template-rows: 20px 1fr min-content;
   }
-  
+
   .header__theme-menu {
     margin: 0;
     padding-top: 0;
@@ -401,7 +400,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .what .main__title {
-    width: 315px;
+    max-width: 315px;
 }
 
   .how {
