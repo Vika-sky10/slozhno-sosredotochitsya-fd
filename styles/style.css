@@ -230,9 +230,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .footer_focus {
-  padding-block-end: 80px;
   text-shadow: 2px 2px 0 var(--shadow-color);
-
 }
 
 @media (min-width: 768px) {
@@ -283,7 +281,7 @@ h1, h2, h3, h4, p, span {
     margin-right: 20px;
     margin-bottom: 175px;
     font-size: var(--text-main-size);
-    margin-block-start: 100px;
+    margin-block-start: 95px;
   }
 
   .main {
