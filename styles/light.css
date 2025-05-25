@@ -1,6 +1,6 @@
 :root.theme-light {
   .page {
-    --border-color: #353430;
+    --border-color: rgba(53, 52, 48, 0.6);
     --text-color: #353430;
     --main-title: #353430;
     --accent-text-color: #FF8DCB;
@@ -22,7 +22,7 @@
 
 @media (prefers-color-scheme: light) {
   .page {
-    --border-color: #353430;
+    --border-color: rgba(53, 52, 48, 0.6);
     --text-color: #353430;
     --main-title: #353430;
     --accent-text-color: #FF8DCB;
