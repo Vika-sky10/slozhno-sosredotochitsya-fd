@@ -148,7 +148,6 @@ h1, h2, h3, h4, p, span {
 }
 
 .header_description {
-  /*margin-block-start: 55px;*/
   inline-size: 355px;
   align-self: center;
   justify-self: center;
@@ -263,9 +262,7 @@ h1, h2, h3, h4, p, span {
     height: 30px;
   }
 
-  .header__theme-menu {/*
-    padding-top: 60px; 150мб
-    padding-right: 20px;*/
+  .header__theme-menu {
     padding-top: 95px;
         padding-inline-end: 20px;
         padding-block-end: 20px;
@@ -279,8 +276,7 @@ h1, h2, h3, h4, p, span {
 }
 
   .header__title {
-    /*padding-block-start: 160px;*/
-    padding-block-end: 100px; 60
+    padding-block-end: 100px;
   }
 
   .focus {
@@ -292,9 +288,8 @@ h1, h2, h3, h4, p, span {
     width: 364px;
     justify-self: end;
     margin-right: 20px;
-    margin-bottom: 155px; 175
+    margin-bottom: 155px;
     font-size: var(--text-main-size);
-    /*margin-block-start: 95px;*/
   }
 
   .main {
@@ -375,17 +370,6 @@ h1, h2, h3, h4, p, span {
 
 }
 
-/*@media (min-width: 769px) and (max-width: 1024px) {
-  .header__title {
-  padding-block-start: 0;
-  padding-block-end: 0;
-}
-  .header_description {
-    margin-block-start: 50px;
-  }
-}*/
-
-
 @media (min-width: 1024px) {
 
   .header {
@@ -407,7 +391,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .header__title {
-    padding-block-end: 70px;
+    padding-block-end: 120px;
     padding-block-start: 0;
   }
 
