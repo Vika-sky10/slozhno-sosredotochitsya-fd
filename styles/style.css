@@ -261,6 +261,7 @@ h1, h2, h3, h4, p, span {
   .empty {
     top: 20px;
     right: 30px;
+    height: 30px;
   }
 
   .header__theme-menu {
@@ -274,6 +275,7 @@ h1, h2, h3, h4, p, span {
     align-items: end;
     row-gap: 13px;
 }
+
   .header__title {
     padding-block-start: 160px;
     padding-block-end: 60px;
@@ -371,12 +373,19 @@ h1, h2, h3, h4, p, span {
 
 }
 
-@media (min-width: 790px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header__title { 
-  padding-block-start: 0;}
+  padding-block-start: 0;
+  padding-block-end: 0;
+}
+  .header_description {
+    margin-block-start: 50px;
+  }
 }
 
+
 @media (min-width: 1024px) {
+
   .header {
     grid-template-rows: 20px 1fr min-content;
   }
@@ -412,6 +421,7 @@ h1, h2, h3, h4, p, span {
   .what {
     display: grid;
   }
+
   .many {
     display: grid;
     grid-template-columns: repeat(3, 315px);
