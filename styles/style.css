@@ -97,7 +97,6 @@ h1, h2, h3, h4, p, span {
 .header__theme-menu-button {
   display: flex;
   background-color: transparent;
-  border: none;
   height: 25px;
   padding-inline-start: 13px;
   padding-inline-end: 13px;
@@ -149,7 +148,7 @@ h1, h2, h3, h4, p, span {
 }
 
 .header_description {
-  margin-block-start: 55px;
+  /*margin-block-start: 55px;*/
   inline-size: 355px;
   align-self: center;
   justify-self: center;
@@ -264,9 +263,12 @@ h1, h2, h3, h4, p, span {
     height: 30px;
   }
 
-  .header__theme-menu {
-    padding-top: 60px;
-    padding-right: 20px;
+  .header__theme-menu {/*
+    padding-top: 60px; 150мб
+    padding-right: 20px;*/
+    padding-top: 95px;
+        padding-inline-end: 20px;
+        padding-block-end: 20px;
   }
 
   .header__theme-menu-list {
@@ -277,8 +279,8 @@ h1, h2, h3, h4, p, span {
 }
 
   .header__title {
-    padding-block-start: 160px;
-    padding-block-end: 60px;
+    /*padding-block-start: 160px;*/
+    padding-block-end: 100px; 60
   }
 
   .focus {
@@ -290,9 +292,9 @@ h1, h2, h3, h4, p, span {
     width: 364px;
     justify-self: end;
     margin-right: 20px;
-    margin-bottom: 175px;
+    margin-bottom: 155px; 175
     font-size: var(--text-main-size);
-    margin-block-start: 95px;
+    /*margin-block-start: 95px;*/
   }
 
   .main {
@@ -373,15 +375,15 @@ h1, h2, h3, h4, p, span {
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header__title { 
+/*@media (min-width: 769px) and (max-width: 1024px) {
+  .header__title {
   padding-block-start: 0;
   padding-block-end: 0;
 }
   .header_description {
     margin-block-start: 50px;
   }
-}
+}*/
 
 
 @media (min-width: 1024px) {
