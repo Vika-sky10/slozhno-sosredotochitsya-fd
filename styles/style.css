@@ -265,7 +265,7 @@ h1, h2, h3, h4, p, span {
   }
 
   .header__theme-menu {
-    padding-top: 150px;
+    padding-top: 60px;
     padding-right: 20px;
   }
 
@@ -405,8 +405,8 @@ h1, h2, h3, h4, p, span {
   }
 
   .header__title {
-    padding-block-end: 20px;
-    padding-block-start: 40px;
+    padding-block-end: 70px;
+    padding-block-start: 0;
   }
 
   .header_description {
