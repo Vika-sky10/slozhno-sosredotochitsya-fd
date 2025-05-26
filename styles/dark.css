@@ -1,7 +1,8 @@
 :root.theme-dark {
   .page {
   --text-color: #F1B2CE;
-  --border-color: rgba(255, 0, 112, 0.6);
+  --border-color: #FF0070;
+  --border-hover: rgba(255, 0, 112, 0.4);
   --accent-text-color: #FF0070;
   --accent-bk-color: #FF0070;
   --shadow-color: #DB00FF;
@@ -14,7 +15,8 @@
 @media (prefers-color-scheme: dark) {
     .page {
       --text-color: #F1B2CE;
-      --border-color: rgba(255, 0, 112, 0.6);
+      --border-color:  #FF0070;
+      --border-hover: rgba(255, 0, 112, 0.4);
       --accent-text-color: #FF0070;
       --accent-bk-color: #FF0070;
       --shadow-color: #DB00FF;

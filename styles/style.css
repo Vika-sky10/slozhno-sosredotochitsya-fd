@@ -121,6 +121,10 @@ h1, h2, h3, h4, p, span {
   border: 1px solid var(--border-color);
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--border-hover);
+}
+
 .header__title {
   padding-block-start: 65px;
   margin-inline-start: 10px;
@@ -253,8 +257,8 @@ h1, h2, h3, h4, p, span {
 
   .header__theme-menu {
     padding-top: 95px;
-        padding-inline-end: 20px;
-        padding-block-end: 20px;
+    padding-inline-end: 20px;
+    padding-block-end: 20px;
   }
 
   .header__theme-menu-list {
