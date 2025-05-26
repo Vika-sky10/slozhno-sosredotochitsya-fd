@@ -159,7 +159,6 @@ h1, h2, h3, h4, p, span {
   color: var(--main-title);
 }
 
-
 .main__text {
   color: var(--text-color);
   font-weight: 400;
@@ -266,7 +265,7 @@ h1, h2, h3, h4, p, span {
     flex-direction: column;
     align-items: end;
     row-gap: 13px;
-}
+  }
 
   .header__title {
     padding-block-end: 100px;
@@ -335,7 +334,6 @@ h1, h2, h3, h4, p, span {
     grid-template-rows: repeat(3, auto);
     gap: 20px;
     height: 100%;
-    
   }
 
  .sunset {
@@ -346,6 +344,7 @@ h1, h2, h3, h4, p, span {
     height: 100%;
     object-fit: cover;
   }
+
   .ice-cream {
     grid-column: 3;
     grid-row: 1/3;
@@ -360,11 +359,9 @@ h1, h2, h3, h4, p, span {
     grid-column: 2/4;
     grid-row: 3;
   }
-
 }
 
 @media (min-width: 1024px) {
-
   .header {
     grid-template-rows: 20px 1fr min-content;
   }
@@ -410,7 +407,7 @@ h1, h2, h3, h4, p, span {
 
   .what .main__title {
     max-width: 315px;
-}
+  }
 
   .how {
    grid-template-columns: 315px 1fr;
